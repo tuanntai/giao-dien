@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung Tâm Lái Xe OVERDOSE</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./IMAGE/logo.png" alt="logo">
+
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="">Trang chủ</a></li>
+                <li><a class="nav-link" href="">Giới thiệu</a></li>
+                <li><a class="nav-link" href="">Khóa Học</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button class="login-button"><a href="./login.html">Đăng nhập</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>OVERDOSE</h1>
+                    <br><br><br>
+                    <p>Trung tâm Dạy lái xe Qua mạng</p>
+
+                </div>
+
+                <div class="cta">
+                    <button class="cta-select"> Tham Gia </button>
+
+                </div>
+                <div class="point-man"><img src="./IMAGE/point-man.png" alt=""></div>
+                <div class="follow-us">
+                    <p>Theo dõi cùng chúng tôi<span><a href=""><img src="./IMAGE/logo-facebook.png"
+                                    alt="logo-facebook"></a></span></p>
+                </div>
+            </div>
+            <div class=cover>
+                <img src="./IMAGE/presentation1.jpg" alt="cover-bg">
+            </div>
+        </section>
+
+    </main>
+    <section class="facilities">
+        <h1>Các Chương Trình Đào Tạo</h1>
+        <br>
+        <div class="facilities-cols">
+            <div class="facilities-col">
+                <img src="./IMAGE/xemay.jpg" alt="">
+                <h3>Hạng A1</h3>
+                <p>Cấp cho người lái xe mô tô hai bánh có dung tích xy lanh từ 50 cm3 đến 125 cm3 hoặc có công suất động
+                    cơ điện trên 04 kw đến 11 kw</p>
+               
+            </div>
+            <div class="facilities-col">
+                <img src="./IMAGE/oto.png" alt="">
+                <h3>Hạng B2</h3>
+                <p>Cấp cho người lái xe ô tô chở người đến 9 chỗ số tự động, ô tô tải (kể cả ô tô tải chuyên dùng) số tự
+                    động không vượt quá 3.500 kg</p>
+                  
+            </div>
+            <div class="facilities-col">
+                <img src="./IMAGE/xetai.png" alt="">
+                <h3>Hạng C</h3>
+                <p>Chạy được ô tô tải có trọng tải trên 3,5T (cả ô tô tải chuyên dùng), được điều khiển máy kéo kéo 01
+                    thùng trên 3500kg.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="./IMAGE/oto.png" alt="">
+                <h3>Hạng B2</h3>
+                <p>Cấp cho người lái xe ô tô chở người đến 9 chỗ số tự động, ô tô tải (kể cả ô tô tải chuyên dùng) số tự
+                    động không vượt quá 3.500 kg</p>
+                  
+            </div>
+            
+        </div>
+    </section>
+    <section class="news">
+
+        <button class="open-button" onclick="openForm()">Đăng ký theo dõi</button>
+        
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Đăng ký theo dõi</h1>
+        
+            <label for="email"><b>Họ Tên</b></label>
+            <input type="text" placeholder="Nhập họ tên" name="name" required>
+        
+            <label for="psw"><b>Số Điện Thoại</b></label>
+            <input type="text" placeholder="Nhập SĐT" name="phone" required>
+        
+            <button type="submit" class="btn">Đăng ký theo dõi</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        
+       
+    </section>
+</body>
+<script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+</script>
+</html> 
